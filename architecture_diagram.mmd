@@ -1,0 +1,46 @@
+graph TD
+    A[X-Ray Machine System] --> B[X-Ray Emitter]
+    A --> C[Control Panel]
+    A --> D[Image Detector]
+    A --> E[Cooling System]
+    A --> F[Power Supply]
+    A --> G[Safety Interlocks]
+    A --> H[User Interface]
+    A --> I[Data Storage]
+    A --> J[Communication Module]
+
+    %% Interactions
+    C --> B
+    C --> D
+    C --> H
+    C --> I
+    C --> J
+    D --> I
+    H --> I
+    J --> I
+
+    %% Descriptions
+    classDef description fill:#f9f,stroke:#333,stroke-width:2px;
+    class A description;
+    class B description;
+    class C description;
+    class D description;
+    class E description;
+    class F description;
+    class G description;
+    class H description;
+    class I description;
+    class J description;
+
+    %% Requirement IDs
+    classDef reqID fill:#bbf,stroke:#333,stroke-width:2px;
+    class A reqID;
+    class B reqID;
+    class C reqID;
+    class D reqID;
+    class E reqID;
+    class F reqID;
+    class G reqID;
+    class H reqID;
+    class I reqID;
+    class J reqID;
